@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <img src=".//icone-de-calculadora-simples-icone-branco-sobre-fundo-preto-inversao-700-126338167-removebg-preview.png" alt="" id="calc">
+    <h1>Calculadora de Juros</h1>
+    <div class="calculator">
+        <label for="principal" id="prin">Valor Principal:</label>
+        <input type="number" id="principal">
+
+        <label for="taxa" id="tax">Taxa de Juros (%):</label>
+        <input type="number" id="taxa">
+
+        <label for="periodo" id="per">Período (em anos):</label>
+        <input type="number" id="periodo">
+
+        <button onclick="calcularJurosSimples()">Calcular Juros Simples</button>
+        <button onclick="calcularJurosCompostos()">Calcular Juros Compostos</button>
+
+        <h2 id="val">Valor Futuro:</h2>
+        <div id="resultado"></div>
+    </div>
+    <script src="calculadora.js"></script>
+    <p>By Pedro Leone!</p>
+</body>
+</html>
